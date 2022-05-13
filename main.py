@@ -9,7 +9,7 @@ hostName = "localhost"
 serverPort = 8081
 
 # Solar inverter variables module. Local IP y datetime from peninsular Spain
-h = huawei_solar.HuaweiSolar(host="192.168.1.132")
+h = huawei_solar.HuaweiSolar(host="[INSERT_INVERTER_LOCAL_IP]")
 input_power = h.get("input_power")
 active_power = h.get("active_power")
 power_meter_active_power = h.get("power_meter_active_power")
