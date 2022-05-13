@@ -21,7 +21,7 @@ datetime_ES = datetime.now(tz_ES)
 
 class MyServer(BaseHTTPRequestHandler):
 
-# Priting the web including Python variables
+# Printing the web including Python variables
     def do_GET(self):
         self.send_response(200)
         self.send_header("Content-type", "text/html")
