@@ -8,7 +8,7 @@ importlib.reload(huawei_solar)
 hostName = "localhost"
 serverPort = 8081
 
-# Solar inverter variables module. IP local y datetime from peninsular Spain
+# Solar inverter variables module. Local IP y datetime from peninsular Spain
 h = huawei_solar.HuaweiSolar(host="192.168.1.132")
 input_power = h.get("input_power")
 active_power = h.get("active_power")
