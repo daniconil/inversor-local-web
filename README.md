@@ -37,14 +37,14 @@ Más información de pymodbus en https://pypi.org/project/pymodbus/
 
 ## 3. Modificación de IP
 
-Debemos modificar **INSERT_INVERTER_LOCAL_IP** de la línea 12 por la IP local del inversor Huawei. Accede al script:
+Debemos modificar **[INSERT_INVERTER_LOCAL_IP]** de la línea 12 por la IP local del inversor Huawei. Accede al script:
 ```
 nano inversorlocal.py
 ```
 Y modifica la variable indicada:
 
 ```
-h = huawei_solar.HuaweiSolar(host="IP_LOCAL_INVERSOR")
+h = huawei_solar.HuaweiSolar(host="[INSERT_INVERTER_LOCAL_IP]")
 ```
 
 ## 4. Ejecución del script
@@ -60,7 +60,7 @@ Y obtendremos en la terminal el siguiente aviso
 Server started http://localhost:8081
 ```
 
-Accedemos mediante a ese navegador y obtendremos un listado de datos básicos.
+Accedemos mediante a ese navegador a esa dirección y obtendremos un listado de datos básicos.
 
 ## Ejemplo con valores en W:
 
